@@ -1,0 +1,15 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: ygb-stream
+          group: group1
+          consumer:
+            durableSubscription: true
+  rabbitmq:
+    addresses: 127.0.0.1:5672
+    username: ygb
+    password: ygb

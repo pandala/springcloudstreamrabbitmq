@@ -1,0 +1,12 @@
+server:
+  port: 8089
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: ygb-stream
+  rabbitmq:
+    addresses: localhost:5672
+    username: ygb
+    password: ygb
